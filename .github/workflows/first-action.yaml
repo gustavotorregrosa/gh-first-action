@@ -1,0 +1,19 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Print greeting
+        run: | 
+          echo "First output"
+          echo "Second output"
+  second-job:
+      runs-on: ubuntu-22.04
+      steps:
+        - name: Print greeting
+          run: | 
+            echo "First-second output"
+            echo "Second-second output"
+      
+      
